@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  google-map-place-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+     - ./data:/data
+     - ./models:/models
+ 
